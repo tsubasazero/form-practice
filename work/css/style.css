@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+html,body{
+  height: 100%;
+}
+
+.aqua-back{
+  height: 100%;
+  background-color: #cff1ff;
+  overflow: auto;
+}
+
+.main-box{
+  height: 100%;
+  width: 600px;
+  margin: auto;
+}
+
+.title{
+  text-align: center;
+  font-size: 28px;
+  padding: 50px;
+}
+
+.sky-box{
+  background-color: #ecfaff;
+}
+
+form{
+  padding: 50px;
+}
+
+.account-create{
+  text-align: center;
+  font-size: 28px;
+}
+
+.box-input{
+  margin-top: 50px;
+}
+
+h3{
+  font-size: 20px;
+}
+
+.form-label{
+  margin-top: 25px;
+}
+
+.label-font{
+  font-size: 14px;
+  
+}
+
+.red{
+  color: #e40000;
+  font-size: 8px;
+}
+
+.blue{
+  color: #0170bf;
+  cursor: pointer;
+}
+
+.input-text{
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 10px;
+  height: 35px;
+  padding: 5px;
+}
+
+.input-box{
+  margin-top: 10px;
+  display: flex;
+}
+
+.age-select{
+  width: 100%;
+}
+
+select:invalid {
+  color: #757575;
+}
+
+.age-value{
+  width: 100%;
+  height: 35px;
+}
+
+.opa{
+  
+}
+
+.gender-box{
+  width: 20%;
+}
+
+.account-send{
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  background-color: #0170bf;
+  color: #ffffff;
+  cursor: pointer;
+
+}
+
+.caution{
+  margin-top: 30px;
+  font-size: 5px;
+}
+
