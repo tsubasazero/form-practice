@@ -21,17 +21,17 @@
             <h3 class="data-myself">個人情報</h3>
             <div class="form-label">
               <label class="label-font" for="family">名字 <span class="red">※</span></label>
-              <input class="input-text" type="text" name="family-name">
+              <input class="input-text" type="text" name="family-name" required>
             </div>
             <div class="form-label">
               <label class="label-font" for="family">名前 <span class="red">※</span></label>
-              <input class="input-text" type="text" name="first-name">
+              <input class="input-text" type="text" name="first-name" required>
             </div>
             <div class="form-label">
               <label class="label-font" for="age">生年月日 <span class="red">※</span></label>
               <div class="input-box">
                 <div class="age-select">
-                  <select class="age-value" name="year" required>
+                  <select class="input-text" name="year" required>
                     <option value="" selected disabled>年</option>
                     <option value="">2001</option>
                     <option value="">2002</option>
@@ -48,7 +48,7 @@
                   </select>
                 </div>
                 <div class="age-select">
-                  <select class="age-value" name="month" required>
+                  <select class="input-text" name="month" required>
                     <option value="" selected disabled>月</option>
                     <option value="">1</option>
                     <option value="">2</option>
@@ -65,7 +65,7 @@
                   </select>
                 </div>
                 <div class="age-select">
-                  <select class="age-value" name="day" required>
+                  <select class="input-text" name="day" required>
                     <option value="" selected disabled>日</option>
                     <option value="">1</option>
                     <option value="">2</option>
@@ -83,24 +83,24 @@
                 </div>
               </div>
             </div>
-            <div class="form-label">
-              <label class="label-font" for="gender">性別 <span class="red">※</span></label>
+            <div class="form-label" >
+              <label class="label-font" for="gender" >性別 <span class="red">※</span></label>
               <div class="input-box">
                 <div class="gender-box">
-                  <input class="male" type="radio" name="gender" value="male"><label for="male">男</label>
+                  <input class="male" type="radio" name="gender" value="male" required><label for="male" >男</label>
                 </div>
                 <div class="gender-box">
-                  <input class="female" type="radio" name="gender" value="female"><label for="female">女</label>
+                  <input class="female" type="radio" name="gender" value="female" required><label for="female">女</label>
                 </div>
                 <div class="gender-box">
-                  <input class="nomale" type="radio" name="gender" value="nomale"><label for="nomale">その他</label>
+                  <input class="nomale" type="radio" name="gender" value="nomale" required><label for="nomale">その他</label>
                 </div>
               </div>
             </div>
             <div class="form-label">
               <label class="label-font" for="jobs">職業 <span class="red">※</span></label>
               <div class="input-box">
-                <select class="age-value" name="jobs" required>
+                <select class="input-text" name="jobs" required>
                   <option value="" selected disabled>選択してください</option>
                   <option value="">学生</option>
                   <option value="">会社員</option>
@@ -114,15 +114,15 @@
             <h3 class="data-account">アカウント情報</h3>
             <div class="form-label">
               <label class="label-font" for="account-name">アカウント名 <span class="red">※</span></label>
-              <input class="input-text" type="text" name="account-name">
+              <input class="input-text" type="text" name="account-name" required>
             </div>
             <div class="form-label">
               <label class="label-font" for="account-mail">メールアドレス <span class="red">※</span></label>
-              <input class="input-text" type="text" name="account-mail">
+              <input class="input-text" type="text" name="account-mail" required>
             </div>
             <div class="form-label">
               <label class="label-font" for="account-pass">パスワード <span class="red">※</span></label>
-              <input class="input-text" type="text" name="account-pass">
+              <input class="input-text" type="text" name="account-pass" required>
             </div>
             <div class="form-label">
               <label class="label-font" for="account-pass-again">確認用パスワード <span class="red">※</span></label>
@@ -133,28 +133,28 @@
             <h3 class="data-contact">連絡先</h3>
             <div class="form-label">
             <label class="label-font" for="address">住所 <span class="red">※</span></label>
-              <input class="input-text" type="text" name="address">
+              <input class="input-text" type="text" name="address" required>
             </div>
             <div class="form-label">
             <label class="label-font" for="number">電話番号 <span class="red">※</span></label>
-              <input class="input-text" type="text" name="number">
+              <input class="input-text" type="text" name="number" required>
             </div>
           </div>
           <div class="box-input">
             <h3 class="data-buy">購読情報</h3>
             <div class="form-label">
               <div class="magazine">
-                <input class="check-mail" type="checkbox" name="magazine" value="check-mail"><label for="check-mail">メールマガジン</label>
+                <input class="check-mail" type="checkbox" name="magazine" value="check-mail" required><label for="check-mail" >メールマガジン</label>
               </div>
             </div>
             <div class="form-label">
               <div class="coupon">
-                <input class="check-coupon" type="checkbox" name="coupon" value="check-coupon"><label for="check-coupon">クーポン</label>
+                <input class="check-coupon" type="checkbox" name="coupon" value="check-coupon" required><label for="check-coupon">クーポン</label>
               </div>
             </div>
           </div>
           <div class="box-input">
-            <div class="account-send">アカウント作成</div>
+            <button class="account-send" type="submit">アカウント作成</button>
             <div class="caution">アカウントを作成することにより、<span class="blue">利用規約</span>と<span class="blue">プライバシーポリシー</span>に同意するものとします。</div>
           </div>
         </form>
