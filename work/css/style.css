@@ -92,17 +92,93 @@ select:invalid {
   color: #757575;
 }
 
-/* .age-value{
-  width: 100%;
-  height: 35px;
-  border: 1px solid #d9d9d9;
-} */
-
 
 .gender-box{
-  padding-left: 10px;
-  color: #545658;
+  padding-left: 20px;
+  margin-right: 20px;
 }
+
+.gender-box:last-child{
+  margin-right: -20px;
+}
+
+.radio-box{
+  display: none;
+}
+
+.letter{
+  position: relative;
+  padding-left: 15px;
+}
+
+.letter::before,.letter::after{
+  content: "";
+  position: absolute;
+  display: flex;
+  top: 50%;
+  transform: translate(-50% ,-50%);
+  
+}
+
+.letter::before{
+  border-radius: 50%; 
+  border: 1px solid #d9d9d9;
+  background-color: #fbfbfb;
+  height: 16px;
+  width: 16px;
+}
+
+.radio-box:checked + .letter::after{
+  border-radius: 50%;
+  background-color: #017cbf;
+  height: 8px;
+  width: 8px;
+  
+}
+
+
+.name-check{
+  /* display: flex;
+  position: relative;
+  padding-left: 25px; */
+}
+
+
+.check-mark{
+  display: none;
+}
+
+.service{
+  display: flex;
+  position: relative;
+  padding-left: 25px;
+  
+}
+
+.service::before,.service::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.service::before{
+  border: 1px solid #d9d9d9;
+  background-color: #fbfbfb;
+  height: 16px;
+  width: 16px;
+
+}
+
+.check-mark:checked + .service::after{
+  border-bottom: 3px solid #0140bf;
+  border-right: 3px solid #0140bf;
+  height: 13px;
+  width: 6px;
+  left: 6px;
+  margin-top: -3px;
+  transform: rotate(45deg);
+} 
 
 .account-send{
   box-sizing: border-box;

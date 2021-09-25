@@ -15,20 +15,20 @@
     <div class="main-box">
       <h1 class="title">フォーム作成</h1>
       <div class="sky-box">
-        <form action="">
+        <form action="" autocomplete="off">
           <h2 class="account-create">アカウント作成</h2>
           <div class="box-input">
             <h3 class="data-myself">個人情報</h3>
             <div class="form-label">
-              <label class="label-font" for="family">名字 <span class="red">※</span></label>
+              <label class="label-font">名字 <span class="red">※</span></label>
               <input class="input-text" type="text" name="family-name" required>
             </div>
             <div class="form-label">
-              <label class="label-font" for="family">名前 <span class="red">※</span></label>
+              <label class="label-font" >名前 <span class="red">※</span></label>
               <input class="input-text" type="text" name="first-name" required>
             </div>
             <div class="form-label">
-              <label class="label-font" for="age">生年月日 <span class="red">※</span></label>
+              <label class="label-font">生年月日 <span class="red">※</span></label>
               <div class="input-box">
                 <div class="age-select">
                   <select class="input-text" name="year" required>
@@ -84,21 +84,26 @@
               </div>
             </div>
             <div class="form-label" >
-              <label class="label-font" for="gender" >性別 <span class="red">※</span></label>
+              <label class="label-font">性別 <span class="red">※</span></label>
               <div class="input-box">
-                <div class="gender-box">
-                  <input class="male" type="radio" name="gender" value="male" required><label for="male" >男</label>
-                </div>
-                <div class="gender-box">
-                  <input class="female" type="radio" name="gender" value="female" required><label for="female">女</label>
-                </div>
-                <div class="gender-box">
-                  <input class="nomale" type="radio" name="gender" value="nomale" required><label for="nomale">その他</label>
-                </div>
+                <label class="gender-box">
+                  <input class="radio-box" type="radio" name="gender" value="male" required>
+                  <span class="letter">男性</span>
+                </label>
+                
+                <label class="gender-box">
+                  <input class="radio-box" type="radio" name="gender" value="female" required>
+                  <span class="letter">女性</span>
+                </label>
+        
+                <label class="gender-box">
+                  <input class="radio-box" type="radio" name="gender" value="nomale" required>
+                  <span class="letter">その他</span>
+                </label>
               </div>
             </div>
             <div class="form-label">
-              <label class="label-font" for="jobs">職業 <span class="red">※</span></label>
+              <label class="label-font">職業 <span class="red">※</span></label>
               <div class="input-box">
                 <select class="input-text" name="jobs" required>
                   <option value="" selected disabled>選択してください</option>
@@ -113,19 +118,19 @@
           <div class="box-input">
             <h3 class="data-account">アカウント情報</h3>
             <div class="form-label">
-              <label class="label-font" for="account-name">アカウント名 <span class="red">※</span></label>
+              <label class="label-font" >アカウント名 <span class="red">※</span></label>
               <input class="input-text" type="text" name="account-name" required>
             </div>
             <div class="form-label">
-              <label class="label-font" for="account-mail">メールアドレス <span class="red">※</span></label>
-              <input class="input-text" type="text" name="account-mail" required>
+              <label class="label-font" >メールアドレス <span class="red">※</span></label>
+              <input class="input-text" type="text" name="account-mail" autocomplete="on" required>
             </div>
             <div class="form-label">
-              <label class="label-font" for="account-pass">パスワード <span class="red">※</span></label>
+              <label class="label-font" >パスワード <span class="red">※</span></label>
               <input class="input-text" type="text" name="account-pass" required>
             </div>
             <div class="form-label">
-              <label class="label-font" for="account-pass-again">確認用パスワード <span class="red">※</span></label>
+              <label class="label-font">確認用パスワード <span class="red">※</span></label>
               <input class="input-text" type="text" name="account-pass-again">
             </div>
           </div>
@@ -133,7 +138,7 @@
             <h3 class="data-contact">連絡先</h3>
             <div class="form-label">
             <label class="label-font" for="address">住所 <span class="red">※</span></label>
-              <input class="input-text" type="text" name="address" required>
+              <input class="input-text" type="text" name="address" autocomplete="on" required>
             </div>
             <div class="form-label">
             <label class="label-font" for="number">電話番号 <span class="red">※</span></label>
@@ -142,15 +147,18 @@
           </div>
           <div class="box-input">
             <h3 class="data-buy">購読情報</h3>
+
             <div class="form-label">
-              <div class="magazine">
-                <input class="check-mail" type="checkbox" name="magazine" value="check-mail" required><label for="check-mail" >メールマガジン</label>
-              </div>
+              <label class="name-check">
+                <input class="check-mark" type="checkbox" name="magazine" value="check-mail" required>
+                <span class="service">メールマガジン</span>
+              </label>
             </div>
             <div class="form-label">
-              <div class="coupon">
-                <input class="check-coupon" type="checkbox" name="coupon" value="check-coupon" required><label for="check-coupon">クーポン</label>
-              </div>
+              <label class="name-check">
+                <input class="check-mark" type="checkbox" name="coupon" value="check-coupon" required>
+                <span class="service">クーポン</span>
+              </label>
             </div>
           </div>
           <div class="box-input">
