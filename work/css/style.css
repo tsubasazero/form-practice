@@ -60,10 +60,7 @@ h3{
   font-size: 8px;
 }
 
-.blue{
-  color: #0170bf;
-  cursor: pointer;
-}
+
 
 .input-text{
   box-sizing: border-box;
@@ -137,13 +134,6 @@ select:invalid {
 }
 
 
-.name-check{
-  /* display: flex;
-  position: relative;
-  padding-left: 25px; */
-}
-
-
 .check-mark{
   display: none;
 }
@@ -194,5 +184,10 @@ select:invalid {
 .caution{
   margin-top: 30px;
   font-size: 5px;
+}
+
+.link-blue{
+  color: #0170bf;
+  text-decoration:none;
 }
 
