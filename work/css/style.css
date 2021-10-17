@@ -181,6 +181,12 @@ select:invalid {
   border: 1px solid #0170bf;
 }
 
+.account-send:active{
+  background-color: #ffffff;
+  color: #0170bf;
+  border: 1px solid #ffffff;
+}
+
 .caution{
   margin-top: 30px;
   font-size: 5px;
